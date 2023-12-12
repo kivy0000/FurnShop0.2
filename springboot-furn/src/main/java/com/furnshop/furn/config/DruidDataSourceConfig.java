@@ -15,8 +15,8 @@ import javax.sql.DataSource;
 public class DruidDataSourceConfig {
 
     //配置/注入DruidDataSource
-    //老师提醒: 为什么我们配置/注入指定的数据源, 就替换了默认的数据源
-    //, 老韩再springboot 切换数据源时，讲过底层机制-小伙伴自己回顾
+    //提醒: 为什么我们配置/注入指定的数据源, 就替换了默认的数据源
+    //再springboot 切换数据源时，讲过底层机制-小伙伴自己回顾
     @ConfigurationProperties("spring.datasource")
     @Bean
     public DataSource dataSource() {

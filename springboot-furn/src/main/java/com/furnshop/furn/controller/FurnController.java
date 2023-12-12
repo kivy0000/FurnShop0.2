@@ -32,12 +32,12 @@ public class FurnController {
     private FurnService furnService;
 
     //编写方法，完成添加
-    //老韩说明
+    //说明
     //1. 我们的前端如果是以json格式来发送添加信息furn， 那么我们需要使用@RequestBody
     //   , 才能将数据封装到对应的bean, 同时保证http的请求头的 content-type是对应
     //2. 如果前端是以表单形式提交了，则不需要使用@RequestBody, 才会进行对象参数封装, 同时保证
     //   http的请求头的 content-type是对应
-    //3. 一会老师给小伙伴测试
+    //3. 一会给小伙伴测试
 
     @PostMapping("/save")
     public Result save(@Validated @RequestBody Furn furn, Errors errors) {
@@ -63,7 +63,7 @@ public class FurnController {
 
     }
 
-    //返回所有的家居信息，后面老师再考虑分页显示
+    //返回所有的家居信息，后面再考虑分页显示
     @RequestMapping("/furns")
     public Result listFurns() {
         List<Furn> furns = furnService.list();
@@ -73,7 +73,7 @@ public class FurnController {
     //处理修改
 
     /**
-     * 老师说明
+     * 说明
      * 1. @PutMapping 我们使用Rest风格,因为这里是修改的请求,使用put请求
      * 2. @RequestBody : 表示前端/客户端 发送的数据是以json格式来发送
      */
@@ -86,7 +86,7 @@ public class FurnController {
 
     //处理删除
 
-    //老师使用url占位符+@PathVariable 配合使用 => springmvc时讲过.
+    //使用url占位符+@PathVariable 配合使用 => springmvc时讲过.
     //使用rest 风格 ->del方式
     @DeleteMapping("/del/{id}")
     public Result del(@PathVariable Integer id) {
@@ -105,7 +105,7 @@ public class FurnController {
     }
 
     //分页查询的接口/方法
-    //我们讲解原生 java web时，老韩讲过分页模型->可以回顾, 底层机制类似
+    //我们讲解原生 java web时，讲过分页模型->可以回顾, 底层机制类似
 
     /**
      * @param pageNum  显示第几页 ,默认1
@@ -157,20 +157,20 @@ public class FurnController {
             @RequestParam(defaultValue = "5") Integer pageSize,
             @RequestParam(defaultValue = "") String search) {
 
-        //老师说明:关于lambda表达式, 我们这里使用的是 类名::实例方法
+        //说明:关于lambda表达式, 我们这里使用的是 类名::实例方法
         //是lambda方法引用中一个不太容易理解的知识点
 
-        //后面我们使用到每个lambda表达式式时候，老韩就会有针对性进行讲解-这样理解的就非常深刻
-        //老韩的心得体会: 多用几次，就熟悉了，不用背
+        //后面我们使用到每个lambda表达式式时候，就会有针对性进行讲解-这样理解的就非常深刻
+        //的心得体会: 多用几次，就熟悉了，不用背
         //参考
         //1. https://baijiahao.baidu.com/s?id=1652786021461159890&wfr=spider&for=pc
         //2. https://blog.csdn.net/hjl21/article/details/102702934
 
 
-        //老韩解读
+        //解读
 
         //1. Furn::getName 就是通过lambda表达式引用实例方法 getName
-        //2. 这里就是把  Furn::getName 赋给 SFunction<T,R> 函数式接口 ? 函数式接口老韩一会再说明
+        //2. 这里就是把  Furn::getName 赋给 SFunction<T,R> 函数式接口 ? 函数式接口一会再说明
         //3. 看看  SFunction<T,R> 源码
         /**
          * @FunctionalInterface
@@ -185,7 +185,7 @@ public class FurnController {
          * }
          *4. 传入 Furn::getName 后, 就相当于实现了 SFunction<T, R> 的apply方法
          *5. 底层会根据 传入的 Furn::getName 去得到该方法的对应的属性映射的表的字段, 可以更加灵活
-         *6. 老师回顾一下mybatis 在xxMapper.xml 中有 ResultMap 会体现 Bean的属性和表的字段的映射关系
+         *6. 回顾一下mybatis 在xxMapper.xml 中有 ResultMap 会体现 Bean的属性和表的字段的映射关系
          * <resultMap id="IdenCardResultMap" type="IdenCard">
          *         <id property="id" column="id"/>
          */
@@ -196,10 +196,10 @@ public class FurnController {
 
         //判断search
         if (StringUtils.hasText(search)) {
-            //后面老师会解读 Furn::getName, 这里会引出一系列的知识点.
+            //后面会解读 Furn::getName, 这里会引出一系列的知识点.
             //lambdaQueryWrapper.like(Furn::getName,search);
 
-            //老韩换一个写法-小伙伴可能会清晰, 这时使用依然是正确
+            //换一个写法-小伙伴可能会清晰, 这时使用依然是正确
             SFunction<Furn, Object> sf = Furn::getName;
             lambdaQueryWrapper.like(sf, search);
         }

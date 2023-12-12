@@ -62,7 +62,7 @@
 
 
         <!--引入hibernate-validator - 支持了JSR303的数据校验
-        老师提醒: 如果小伙伴没有提示6.1.0.Final
+        提醒: 如果小伙伴没有提示6.1.0.Final
         请手动填写
         -->
         <dependency>

@@ -10,14 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="231a8596-fe4b-4e34-8032-c233c3a91fb0" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/springboot_vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_vue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_vue/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_vue/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_vue/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_vue/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_vue/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_vue/src/views/HomeView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_vue/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_vue/vue.config.js" afterDir="false" />
+    <list default="true" id="231a8596-fe4b-4e34-8032-c233c3a91fb0" name="默认的" comment="商城项目0.2版本，前后端分离（SpringBoot+Vue3）">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-furn/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-furn/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-furn/src/main/java/com/furnshop/furn/config/DruidDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-furn/src/main/java/com/furnshop/furn/config/DruidDataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-furn/src/main/java/com/furnshop/furn/controller/FurnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-furn/src/main/java/com/furnshop/furn/controller/FurnController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/springboot_vue" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -70,8 +67,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702386433753</updated>
-      <workItem from="1702386434916" duration="311000" />
+      <workItem from="1702386434916" duration="1595000" />
     </task>
+    <task id="LOCAL-00001" summary="商城项目0.2版本，前后端分离（SpringBoot+Vue3）">
+      <created>1702386909626</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702386909626</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,5 +92,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="商城项目0.2版本，前后端分离（SpringBoot+Vue3）" />
+    <option name="LAST_COMMIT_MESSAGE" value="商城项目0.2版本，前后端分离（SpringBoot+Vue3）" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1011" y="395" key="FileChooserDialogImpl" timestamp="1702386747172">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1011" y="395" key="FileChooserDialogImpl/0.0.2560.1410/-1920.0.1536.834@0.0.2560.1410" timestamp="1702386747172" />
+    <state x="970" y="589" width="458" height="258" key="Github.ShareDialog" timestamp="1702387020336">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="970" y="589" width="458" height="258" key="Github.ShareDialog/0.0.2560.1410/-1920.0.1536.834@0.0.2560.1410" timestamp="1702387020336" />
+    <state x="636" y="187" key="SettingsEditor" timestamp="1702386584081">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="636" y="187" key="SettingsEditor/0.0.2560.1410/-1920.0.1536.834@0.0.2560.1410" timestamp="1702386584081" />
+    <state x="776" y="385" key="Vcs.Push.Dialog.v2" timestamp="1702388115542">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="776" y="385" key="Vcs.Push.Dialog.v2/0.0.2560.1410/-1920.0.1536.834@0.0.2560.1410" timestamp="1702388115542" />
   </component>
 </project>
